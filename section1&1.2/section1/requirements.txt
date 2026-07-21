@@ -1,0 +1,15 @@
+livekit-agents==1.6.6
+livekit-rtc==1.1.13
+
+livekit-plugins-silero
+livekit-plugins-groq
+livekit-plugins-deepgram
+livekit-plugins-cartesia
+
+python-dotenv
+
+sounddevice
+numpy
+aiohttp
+requests
+pyjwt

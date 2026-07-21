@@ -1,0 +1,1057 @@
+(.venv) PS C:\Users\2024\3D Objects\assesment\section3> python app_fp.py     
+Loading model...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|██████████████████| 290/290 [00:00<00:00, 1495.77it/s]
+RAM after loading model: 382.62 MB
+
+Prompt: Explain recursion in simple terms.
+
+Answer:
+
+Recursion is a programming technique where a function calls itself repeatedly until a certain condition is met. This allows for solving problems that can be broken down into smaller, similar subproblems.
+
+In simple terms, let's say you have a recipe to make a cake. The first step would be to gather all the ingredients and then prepare them in some way (like mixing them together). Next, you'd add more ingredients until you've used up all of your available ingredients. Then, you'd continue this process of adding ingredients one at a time until you've finished making the cake.
+
+This method works well because it breaks down complex tasks into simpler ones, which makes them easier to solve. Recursion also helps in creating algorithms with higher complexity, as each call to the function represents a different solution to a problem.
+
+It's important to note that while recursion is useful in many situations, it can lead to performance issues if not managed properly, especially when dealing with large datasets or when dealing with recursive functions that need
+
+------ Statistics ------
+RAM Usage      : 1276.89 MB
+Output Tokens  : 200
+Time           : 35.34 sec
+Tokens / sec   : 5.66
+
+Prompt: Write a Python function to compute factorial.
+
+Answer:
+
+Certainly! Here's a simple Python function to calculate the factorial of a given number using recursion:
+
+```python
+def factorial(n):
+    """
+    Calculate the factorial of a given number n.
+
+    Args:
+        n (int): A non-negative integer whose factorial is to be calculated.
+
+    Returns:
+        int: The factorial of n.
+    """
+
+    # Base case: if n is 0 or 1, return 1
+    if n == 0 or n == 1:
+        return 1
+
+    # Recursive case: multiply n with the factorial of (n-1)
+    else:
+        return n * factorial(n - 1)
+
+# Example usage and testing
+if __name__ == "__main__":
+    num = 5
+    print(f"The factorial of {num} is {factorial(num)}")
+```
+
+### Explanation:
+- **Base Case**: If `n` is either 0 or 1, the factorial is defined as 1.
+
+------ Statistics ------
+RAM Usage      : 1276.62 MB
+Output Tokens  : 200
+Time           : 33.40 sec
+Tokens / sec   : 5.99
+
+Prompt: Summarize machine learning in 100 words.
+
+Answer:
+
+Machine learning is a subset of artificial intelligence that involves training algorithms to learn from data and make predictions or decisions based on that data. It's widely used for various applications such as image recognition, natural language processing, recommendation systems, fraud detection, autonomous vehicles, and more. Machine learning models can adaptively improve their performance over time through iterative training processes, allowing them to learn from new data without being explicitly programmed. This makes it an essential tool for many industries seeking to automate complex tasks and gain insights from large datasets.
+
+------ Statistics ------
+RAM Usage      : 1030.62 MB
+Output Tokens  : 104
+Time           : 20.54 sec
+Tokens / sec   : 5.06
+
+Prompt: Translate "Good morning, how are you?" into French.
+
+Answer:
+
+"Bonjour, comment ça va ?"
+
+------ Statistics ------
+RAM Usage      : 1029.38 MB
+Output Tokens  : 9
+Time           : 4.07 sec
+Tokens / sec   : 2.21
+
+Prompt: Write a professional email requesting annual leave.
+
+Answer:
+
+Subject: Request for Annual Leave
+
+Dear [Employee's Name],
+
+I hope this message finds you well.
+
+I am writing to request an additional period of annual leave that will allow me to spend some quality time with my family and friends during the current busy season. I believe this would be beneficial for both personal and professional growth, as it provides me with more flexibility in managing my work-life balance.
+
+Annual leave is typically available on a per-employee basis, but due to the recent economic challenges, we may need to adjust our policies temporarily. I understand that your schedule may have been impacted, and I want to ensure that you do not miss out on any important opportunities or milestones.
+
+To facilitate the process of applying for this leave, please provide the following details:
+
+1. Your full name
+2. Your employee number (if applicable)
+3. The reason(s) why you need additional annual leave (e.g., illness, bereavement, etc.)
+4. Any specific arrangements you have made regarding
+
+------ Statistics ------
+RAM Usage      : 1033.40 MB
+Output Tokens  : 200
+Time           : 31.11 sec
+Tokens / sec   : 6.43
+
+Prompt: Traceback (most recent call last):module>
+    prompt = input("\nPrompt: ")
+             ^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+(.venv) PS C:\Users\2024\3D Objects\assesment\section3>  python app_gguf.py  Loading GGUF model...
+llama_model_loader: loaded meta data with 26 key-value pairs and 291 tensors from models/gguf/Qwen2.5-0.5B-Instruct-Q4_K_M.gguf (version GGUF V3 (latest))llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = qwen2
+llama_model_loader: - kv   1:                               general.type str              = model
+llama_model_loader: - kv   2:                               general.name str              = qwen2.5-0.5b-instruct
+llama_model_loader: - kv   3:                            general.version str              = v0.1
+llama_model_loader: - kv   4:                           general.finetune str              = qwen2.5-0.5b-instruct
+llama_model_loader: - kv   5:                         general.size_label str              = 630M
+llama_model_loader: - kv   6:                          qwen2.block_count u32              = 24
+llama_model_loader: - kv   7:                       qwen2.context_length u32              = 32768
+llama_model_loader: - kv   8:                     qwen2.embedding_length u32              = 896
+llama_model_loader: - kv   9:                  qwen2.feed_forward_length u32              = 4864
+llama_model_loader: - kv  10:                 qwen2.attention.head_count u32              = 14
+llama_model_loader: - kv  11:              qwen2.attention.head_count_kv u32              = 2
+llama_model_loader: - kv  12:                       qwen2.rope.freq_base f32              = 1000000.000000
+llama_model_loader: - kv  13:     qwen2.attention.layer_norm_rms_epsilon f32              = 0.000001
+llama_model_loader: - kv  14:                          general.file_type u32              = 15
+llama_model_loader: - kv  15:                       tokenizer.ggml.model str              = gpt2
+llama_model_loader: - kv  16:                         tokenizer.ggml.pre str              = qwen2
+llama_model_loader: - kv  17:                      tokenizer.ggml.tokens arr[str,151936]  = ["!", "\"", "#", "$", "%", "&", "'", ...
+llama_model_loader: - kv  18:                  tokenizer.ggml.token_type arr[i32,151936]  = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  19:                      tokenizer.ggml.merges arr[str,151387]  = ["Ġ Ġ", "ĠĠ ĠĠ", "i n", "Ġ t",...
+llama_model_loader: - kv  20:                tokenizer.ggml.eos_token_id u32              = 151645
+llama_model_loader: - kv  21:            tokenizer.ggml.padding_token_id u32              = 151643
+llama_model_loader: - kv  22:                tokenizer.ggml.bos_token_id u32              = 151643
+llama_model_loader: - kv  23:               tokenizer.ggml.add_bos_token bool             = false
+llama_model_loader: - kv  24:                    tokenizer.chat_template str              = {%- if tools %}\n    {{- '<|im_start|>...
+llama_model_loader: - kv  25:               general.quantization_version u32              = 2
+llama_model_loader: - type  f32:  121 tensors
+llama_model_loader: - type q5_0:  133 tensors
+llama_model_loader: - type q8_0:   13 tensors
+llama_model_loader: - type q4_K:   12 tensors
+llama_model_loader: - type q6_K:   12 tensors
+print_info: file format = GGUF V3 (latest)
+print_info: file type   = Q4_K - Medium
+print_info: file size   = 462.96 MiB (6.16 BPW) 
+init_tokenizer: initializing tokenizer for type 2
+load: 0 unused tokens
+load: control token: 151661 '<|fim_suffix|>' is not marked as EOG
+load: control token: 151649 '<|box_end|>' is not marked as EOG
+load: control token: 151647 '<|object_ref_end|>' is not marked as EOG
+load: control token: 151654 '<|vision_pad|>' is not marked as EOG
+load: control token: 151659 '<|fim_prefix|>' is not marked as EOG
+load: control token: 151648 '<|box_start|>' is not marked as EOG
+load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+load: control token: 151644 '<|im_start|>' is not marked as EOG
+load: control token: 151646 '<|object_ref_start|>' is not marked as EOG
+load: control token: 151650 '<|quad_start|>' is not marked as EOG
+load: control token: 151651 '<|quad_end|>' is not marked as EOG
+load: control token: 151652 '<|vision_start|>' is not marked as EOG
+load: control token: 151653 '<|vision_end|>' is not marked as EOG
+load: control token: 151655 '<|image_pad|>' is not marked as EOG
+load: control token: 151656 '<|video_pad|>' is not marked as EOG
+load: control token: 151660 '<|fim_middle|>' is not marked as EOG
+load: printing all EOG tokens:
+load:   - 128247 ('</s>')
+load:   - 151643 ('<|endoftext|>')
+load:   - 151645 ('<|im_end|>')
+load:   - 151662 ('<|fim_pad|>')
+load:   - 151663 ('<|repo_name|>')
+load:   - 151664 ('<|file_sep|>')
+load: special tokens cache size = 23
+load: token to piece cache size = 0.9310 MB
+print_info: arch                  = qwen2
+print_info: vocab_only            = 0
+print_info: no_alloc              = 0
+print_info: n_ctx_train           = 32768
+print_info: n_embd_inp            = 896
+print_info: n_embd                = 896
+print_info: n_embd_out            = 896
+print_info: n_layer               = 24
+print_info: n_layer_all           = 24
+print_info: n_head                = 14
+print_info: n_head_kv             = 2
+print_info: n_rot                 = 64
+print_info: n_swa                 = 0
+print_info: is_swa_any            = 0
+print_info: n_embd_head_k         = 64
+print_info: n_embd_head_v         = 64
+print_info: n_gqa                 = 7
+print_info: n_embd_k_gqa          = 128
+print_info: n_embd_v_gqa          = 128
+print_info: f_norm_eps            = 0.0e+00
+print_info: f_norm_rms_eps        = 1.0e-06
+print_info: f_clamp_kqv           = 0.0e+00
+print_info: f_max_alibi_bias      = 0.0e+00
+print_info: f_logit_scale         = 0.0e+00
+print_info: f_attn_scale          = 0.0e+00
+print_info: f_attn_value_scale    = 0.0000
+print_info: n_ff                  = 4864
+print_info: n_expert              = 0
+print_info: n_expert_used         = 0
+print_info: n_expert_groups       = 0
+print_info: n_group_used          = 0
+print_info: causal attn           = 1
+print_info: pooling type          = -1
+print_info: rope type             = 2
+print_info: rope scaling          = linear
+print_info: freq_base_train       = 1000000.0
+print_info: freq_scale_train      = 1
+print_info: n_ctx_orig_yarn       = 32768
+print_info: rope_yarn_log_mul     = 0.0000
+print_info: rope_finetuned        = unknown
+print_info: model type            = 1B
+print_info: model params          = 630.17 M
+print_info: general.name          = qwen2.5-0.5b-instruct
+print_info: vocab type            = BPE
+print_info: n_vocab               = 151936
+print_info: n_merges              = 151387
+print_info: BOS token             = 151643 '<|endoftext|>'
+print_info: EOS token             = 151645 '<|im_end|>'
+print_info: EOT token             = 151645 '<|im_end|>'
+print_info: PAD token             = 151643 '<|endoftext|>'
+print_info: LF token              = 198 'Ċ'
+print_info: FIM PRE token         = 151659 '<|fim_prefix|>'
+print_info: FIM SUF token         = 151661 '<|fim_suffix|>'
+print_info: FIM MID token         = 151660 '<|fim_middle|>'
+print_info: FIM PAD token         = 151662 '<|fim_pad|>'
+print_info: FIM REP token         = 151663 '<|repo_name|>'
+print_info: FIM SEP token         = 151664 '<|file_sep|>'
+print_info: EOG token             = 128247 '</s>'
+print_info: EOG token             = 151643 '<|endoftext|>'
+print_info: EOG token             = 151645 '<|im_end|>'
+print_info: EOG token             = 151662 '<|fim_pad|>'
+print_info: EOG token             = 151663 '<|repo_name|>'
+print_info: EOG token             = 151664 '<|file_sep|>'
+print_info: max token length      = 256
+load_tensors: loading model tensors, this can take a while... (mmap = true, direct_io = false)
+load_tensors: layer   0 assigned to device CPU, is_swa = 0
+load_tensors: layer   1 assigned to device CPU, is_swa = 0
+load_tensors: layer   2 assigned to device CPU, is_swa = 0
+load_tensors: layer   3 assigned to device CPU, is_swa = 0
+load_tensors: layer   4 assigned to device CPU, is_swa = 0
+load_tensors: layer   5 assigned to device CPU, is_swa = 0
+load_tensors: layer   6 assigned to device CPU, is_swa = 0
+load_tensors: layer   7 assigned to device CPU, is_swa = 0
+load_tensors: layer   8 assigned to device CPU, is_swa = 0
+load_tensors: layer   9 assigned to device CPU, is_swa = 0
+load_tensors: layer  10 assigned to device CPU, is_swa = 0
+load_tensors: layer  11 assigned to device CPU, is_swa = 0
+load_tensors: layer  12 assigned to device CPU, is_swa = 0
+load_tensors: layer  13 assigned to device CPU, is_swa = 0
+load_tensors: layer  14 assigned to device CPU, is_swa = 0
+load_tensors: layer  15 assigned to device CPU, is_swa = 0
+load_tensors: layer  16 assigned to device CPU, is_swa = 0
+load_tensors: layer  17 assigned to device CPU, is_swa = 0
+load_tensors: layer  18 assigned to device CPU, is_swa = 0
+load_tensors: layer  19 assigned to device CPU, is_swa = 0
+load_tensors: layer  20 assigned to device CPU, is_swa = 0
+load_tensors: layer  21 assigned to device CPU, is_swa = 0
+load_tensors: layer  22 assigned to device CPU, is_swa = 0
+load_tensors: layer  23 assigned to device CPU, is_swa = 0
+load_tensors: layer  24 assigned to device CPU, is_swa = 0
+create_tensor: loading tensor token_embd.weight
+create_tensor: loading tensor output_norm.weight
+create_tensor: loading tensor output.weight
+create_tensor: loading tensor blk.0.attn_norm.weight
+create_tensor: loading tensor blk.0.attn_q.weight
+create_tensor: loading tensor blk.0.attn_k.weight
+create_tensor: loading tensor blk.0.attn_v.weight
+create_tensor: loading tensor blk.0.attn_q.bias
+create_tensor: loading tensor blk.0.attn_k.bias
+create_tensor: loading tensor blk.0.attn_v.bias
+create_tensor: loading tensor blk.0.attn_output.weight
+create_tensor: loading tensor blk.0.ffn_norm.weight
+create_tensor: loading tensor blk.0.ffn_gate.weight
+create_tensor: loading tensor blk.0.ffn_down.weight
+create_tensor: loading tensor blk.0.ffn_up.weight
+create_tensor: loading tensor blk.1.attn_norm.weight
+create_tensor: loading tensor blk.1.attn_q.weight
+create_tensor: loading tensor blk.1.attn_k.weight
+create_tensor: loading tensor blk.1.attn_v.weight
+create_tensor: loading tensor blk.1.attn_q.bias
+create_tensor: loading tensor blk.1.attn_k.bias
+create_tensor: loading tensor blk.1.attn_v.bias
+create_tensor: loading tensor blk.1.attn_output.weight
+create_tensor: loading tensor blk.1.ffn_norm.weight
+create_tensor: loading tensor blk.1.ffn_gate.weight
+create_tensor: loading tensor blk.1.ffn_down.weight
+create_tensor: loading tensor blk.1.ffn_up.weight
+create_tensor: loading tensor blk.2.attn_norm.weight
+create_tensor: loading tensor blk.2.attn_q.weight
+create_tensor: loading tensor blk.2.attn_k.weight
+create_tensor: loading tensor blk.2.attn_v.weight
+create_tensor: loading tensor blk.2.attn_q.bias
+create_tensor: loading tensor blk.2.attn_k.bias
+create_tensor: loading tensor blk.2.attn_v.bias
+create_tensor: loading tensor blk.2.attn_output.weight
+create_tensor: loading tensor blk.2.ffn_norm.weight
+create_tensor: loading tensor blk.2.ffn_gate.weight
+create_tensor: loading tensor blk.2.ffn_down.weight
+create_tensor: loading tensor blk.2.ffn_up.weight
+create_tensor: loading tensor blk.3.attn_norm.weight
+create_tensor: loading tensor blk.3.attn_q.weight
+create_tensor: loading tensor blk.3.attn_k.weight
+create_tensor: loading tensor blk.3.attn_v.weight
+create_tensor: loading tensor blk.3.attn_q.bias
+create_tensor: loading tensor blk.3.attn_k.bias
+create_tensor: loading tensor blk.3.attn_v.bias
+create_tensor: loading tensor blk.3.attn_output.weight
+create_tensor: loading tensor blk.3.ffn_norm.weight
+create_tensor: loading tensor blk.3.ffn_gate.weight
+create_tensor: loading tensor blk.3.ffn_down.weight
+create_tensor: loading tensor blk.3.ffn_up.weight
+create_tensor: loading tensor blk.4.attn_norm.weight
+create_tensor: loading tensor blk.4.attn_q.weight
+create_tensor: loading tensor blk.4.attn_k.weight
+create_tensor: loading tensor blk.4.attn_v.weight
+create_tensor: loading tensor blk.4.attn_q.bias
+create_tensor: loading tensor blk.4.attn_k.bias
+create_tensor: loading tensor blk.4.attn_v.bias
+create_tensor: loading tensor blk.4.attn_output.weight
+create_tensor: loading tensor blk.4.ffn_norm.weight
+create_tensor: loading tensor blk.4.ffn_gate.weight
+create_tensor: loading tensor blk.4.ffn_down.weight
+create_tensor: loading tensor blk.4.ffn_up.weight
+create_tensor: loading tensor blk.5.attn_norm.weight
+create_tensor: loading tensor blk.5.attn_q.weight
+create_tensor: loading tensor blk.5.attn_k.weight
+create_tensor: loading tensor blk.5.attn_v.weight
+create_tensor: loading tensor blk.5.attn_q.bias
+create_tensor: loading tensor blk.5.attn_k.bias
+create_tensor: loading tensor blk.5.attn_v.bias
+create_tensor: loading tensor blk.5.attn_output.weight
+create_tensor: loading tensor blk.5.ffn_norm.weight
+create_tensor: loading tensor blk.5.ffn_gate.weight
+create_tensor: loading tensor blk.5.ffn_down.weight
+create_tensor: loading tensor blk.5.ffn_up.weight
+create_tensor: loading tensor blk.6.attn_norm.weight
+create_tensor: loading tensor blk.6.attn_q.weight
+create_tensor: loading tensor blk.6.attn_k.weight
+create_tensor: loading tensor blk.6.attn_v.weight
+create_tensor: loading tensor blk.6.attn_q.bias
+create_tensor: loading tensor blk.6.attn_k.bias
+create_tensor: loading tensor blk.6.attn_v.bias
+create_tensor: loading tensor blk.6.attn_output.weight
+create_tensor: loading tensor blk.6.ffn_norm.weight
+create_tensor: loading tensor blk.6.ffn_gate.weight
+create_tensor: loading tensor blk.6.ffn_down.weight
+create_tensor: loading tensor blk.6.ffn_up.weight
+create_tensor: loading tensor blk.7.attn_norm.weight
+create_tensor: loading tensor blk.7.attn_q.weight
+create_tensor: loading tensor blk.7.attn_k.weight
+create_tensor: loading tensor blk.7.attn_v.weight
+create_tensor: loading tensor blk.7.attn_q.bias
+create_tensor: loading tensor blk.7.attn_k.bias
+create_tensor: loading tensor blk.7.attn_v.bias
+create_tensor: loading tensor blk.7.attn_output.weight
+create_tensor: loading tensor blk.7.ffn_norm.weight
+create_tensor: loading tensor blk.7.ffn_gate.weight
+create_tensor: loading tensor blk.7.ffn_down.weight
+create_tensor: loading tensor blk.7.ffn_up.weight
+create_tensor: loading tensor blk.8.attn_norm.weight
+create_tensor: loading tensor blk.8.attn_q.weight
+create_tensor: loading tensor blk.8.attn_k.weight
+create_tensor: loading tensor blk.8.attn_v.weight
+create_tensor: loading tensor blk.8.attn_q.bias
+create_tensor: loading tensor blk.8.attn_k.bias
+create_tensor: loading tensor blk.8.attn_v.bias
+create_tensor: loading tensor blk.8.attn_output.weight
+create_tensor: loading tensor blk.8.ffn_norm.weight
+create_tensor: loading tensor blk.8.ffn_gate.weight
+create_tensor: loading tensor blk.8.ffn_down.weight
+create_tensor: loading tensor blk.8.ffn_up.weight
+create_tensor: loading tensor blk.9.attn_norm.weight
+create_tensor: loading tensor blk.9.attn_q.weight
+create_tensor: loading tensor blk.9.attn_k.weight
+create_tensor: loading tensor blk.9.attn_v.weight
+create_tensor: loading tensor blk.9.attn_q.bias
+create_tensor: loading tensor blk.9.attn_k.bias
+create_tensor: loading tensor blk.9.attn_v.bias
+create_tensor: loading tensor blk.9.attn_output.weight
+create_tensor: loading tensor blk.9.ffn_norm.weight
+create_tensor: loading tensor blk.9.ffn_gate.weight
+create_tensor: loading tensor blk.9.ffn_down.weight
+create_tensor: loading tensor blk.9.ffn_up.weight
+create_tensor: loading tensor blk.10.attn_norm.weight
+create_tensor: loading tensor blk.10.attn_q.weight
+create_tensor: loading tensor blk.10.attn_k.weight
+create_tensor: loading tensor blk.10.attn_v.weight
+create_tensor: loading tensor blk.10.attn_q.bias
+create_tensor: loading tensor blk.10.attn_k.bias
+create_tensor: loading tensor blk.10.attn_v.bias
+create_tensor: loading tensor blk.10.attn_output.weight
+create_tensor: loading tensor blk.10.ffn_norm.weight
+create_tensor: loading tensor blk.10.ffn_gate.weight
+create_tensor: loading tensor blk.10.ffn_down.weight
+create_tensor: loading tensor blk.10.ffn_up.weight
+create_tensor: loading tensor blk.11.attn_norm.weight
+create_tensor: loading tensor blk.11.attn_q.weight
+create_tensor: loading tensor blk.11.attn_k.weight
+create_tensor: loading tensor blk.11.attn_v.weight
+create_tensor: loading tensor blk.11.attn_q.bias
+create_tensor: loading tensor blk.11.attn_k.bias
+create_tensor: loading tensor blk.11.attn_v.bias
+create_tensor: loading tensor blk.11.attn_output.weight
+create_tensor: loading tensor blk.11.ffn_norm.weight
+create_tensor: loading tensor blk.11.ffn_gate.weight
+create_tensor: loading tensor blk.11.ffn_down.weight
+create_tensor: loading tensor blk.11.ffn_up.weight
+create_tensor: loading tensor blk.12.attn_norm.weight
+create_tensor: loading tensor blk.12.attn_q.weight
+create_tensor: loading tensor blk.12.attn_k.weight
+create_tensor: loading tensor blk.12.attn_v.weight
+create_tensor: loading tensor blk.12.attn_q.bias
+create_tensor: loading tensor blk.12.attn_k.bias
+create_tensor: loading tensor blk.12.attn_v.bias
+create_tensor: loading tensor blk.12.attn_output.weight
+create_tensor: loading tensor blk.12.ffn_norm.weight
+create_tensor: loading tensor blk.12.ffn_gate.weight
+create_tensor: loading tensor blk.12.ffn_down.weight
+create_tensor: loading tensor blk.12.ffn_up.weight
+create_tensor: loading tensor blk.13.attn_norm.weight
+create_tensor: loading tensor blk.13.attn_q.weight
+create_tensor: loading tensor blk.13.attn_k.weight
+create_tensor: loading tensor blk.13.attn_v.weight
+create_tensor: loading tensor blk.13.attn_q.bias
+create_tensor: loading tensor blk.13.attn_k.bias
+create_tensor: loading tensor blk.13.attn_v.bias
+create_tensor: loading tensor blk.13.attn_output.weight
+create_tensor: loading tensor blk.13.ffn_norm.weight
+create_tensor: loading tensor blk.13.ffn_gate.weight
+create_tensor: loading tensor blk.13.ffn_down.weight
+create_tensor: loading tensor blk.13.ffn_up.weight
+create_tensor: loading tensor blk.14.attn_norm.weight
+create_tensor: loading tensor blk.14.attn_q.weight
+create_tensor: loading tensor blk.14.attn_k.weight
+create_tensor: loading tensor blk.14.attn_v.weight
+create_tensor: loading tensor blk.14.attn_q.bias
+create_tensor: loading tensor blk.14.attn_k.bias
+create_tensor: loading tensor blk.14.attn_v.bias
+create_tensor: loading tensor blk.14.attn_output.weight
+create_tensor: loading tensor blk.14.ffn_norm.weight
+create_tensor: loading tensor blk.14.ffn_gate.weight
+create_tensor: loading tensor blk.14.ffn_down.weight
+create_tensor: loading tensor blk.14.ffn_up.weight
+create_tensor: loading tensor blk.15.attn_norm.weight
+create_tensor: loading tensor blk.15.attn_q.weight
+create_tensor: loading tensor blk.15.attn_k.weight
+create_tensor: loading tensor blk.15.attn_v.weight
+create_tensor: loading tensor blk.15.attn_q.bias
+create_tensor: loading tensor blk.15.attn_k.bias
+create_tensor: loading tensor blk.15.attn_v.bias
+create_tensor: loading tensor blk.15.attn_output.weight
+create_tensor: loading tensor blk.15.ffn_norm.weight
+create_tensor: loading tensor blk.15.ffn_gate.weight
+create_tensor: loading tensor blk.15.ffn_down.weight
+create_tensor: loading tensor blk.15.ffn_up.weight
+create_tensor: loading tensor blk.16.attn_norm.weight
+create_tensor: loading tensor blk.16.attn_q.weight
+create_tensor: loading tensor blk.16.attn_k.weight
+create_tensor: loading tensor blk.16.attn_v.weight
+create_tensor: loading tensor blk.16.attn_q.bias
+create_tensor: loading tensor blk.16.attn_k.bias
+create_tensor: loading tensor blk.16.attn_v.bias
+create_tensor: loading tensor blk.16.attn_output.weight
+create_tensor: loading tensor blk.16.ffn_norm.weight
+create_tensor: loading tensor blk.16.ffn_gate.weight
+create_tensor: loading tensor blk.16.ffn_down.weight
+create_tensor: loading tensor blk.16.ffn_up.weight
+create_tensor: loading tensor blk.17.attn_norm.weight
+create_tensor: loading tensor blk.17.attn_q.weight
+create_tensor: loading tensor blk.17.attn_k.weight
+create_tensor: loading tensor blk.17.attn_v.weight
+create_tensor: loading tensor blk.17.attn_q.bias
+create_tensor: loading tensor blk.17.attn_k.bias
+create_tensor: loading tensor blk.17.attn_v.bias
+create_tensor: loading tensor blk.17.attn_output.weight
+create_tensor: loading tensor blk.17.ffn_norm.weight
+create_tensor: loading tensor blk.17.ffn_gate.weight
+create_tensor: loading tensor blk.17.ffn_down.weight
+create_tensor: loading tensor blk.17.ffn_up.weight
+create_tensor: loading tensor blk.18.attn_norm.weight
+create_tensor: loading tensor blk.18.attn_q.weight
+create_tensor: loading tensor blk.18.attn_k.weight
+create_tensor: loading tensor blk.18.attn_v.weight
+create_tensor: loading tensor blk.18.attn_q.bias
+create_tensor: loading tensor blk.18.attn_k.bias
+create_tensor: loading tensor blk.18.attn_v.bias
+create_tensor: loading tensor blk.18.attn_output.weight
+create_tensor: loading tensor blk.18.ffn_norm.weight
+create_tensor: loading tensor blk.18.ffn_gate.weight
+create_tensor: loading tensor blk.18.ffn_down.weight
+create_tensor: loading tensor blk.18.ffn_up.weight
+create_tensor: loading tensor blk.19.attn_norm.weight
+create_tensor: loading tensor blk.19.attn_q.weight
+create_tensor: loading tensor blk.19.attn_k.weight
+create_tensor: loading tensor blk.19.attn_v.weight
+create_tensor: loading tensor blk.19.attn_q.bias
+create_tensor: loading tensor blk.19.attn_k.bias
+create_tensor: loading tensor blk.19.attn_v.bias
+create_tensor: loading tensor blk.19.attn_output.weight
+create_tensor: loading tensor blk.19.ffn_norm.weight
+create_tensor: loading tensor blk.19.ffn_gate.weight
+create_tensor: loading tensor blk.19.ffn_down.weight
+create_tensor: loading tensor blk.19.ffn_up.weight
+create_tensor: loading tensor blk.20.attn_norm.weight
+create_tensor: loading tensor blk.20.attn_q.weight
+create_tensor: loading tensor blk.20.attn_k.weight
+create_tensor: loading tensor blk.20.attn_v.weight
+create_tensor: loading tensor blk.20.attn_q.bias
+create_tensor: loading tensor blk.20.attn_k.bias
+create_tensor: loading tensor blk.20.attn_v.bias
+create_tensor: loading tensor blk.20.attn_output.weight
+create_tensor: loading tensor blk.20.ffn_norm.weight
+create_tensor: loading tensor blk.20.ffn_gate.weight
+create_tensor: loading tensor blk.20.ffn_down.weight
+create_tensor: loading tensor blk.20.ffn_up.weight
+create_tensor: loading tensor blk.21.attn_norm.weight
+create_tensor: loading tensor blk.21.attn_q.weight
+create_tensor: loading tensor blk.21.attn_k.weight
+create_tensor: loading tensor blk.21.attn_v.weight
+create_tensor: loading tensor blk.21.attn_q.bias
+create_tensor: loading tensor blk.21.attn_k.bias
+create_tensor: loading tensor blk.21.attn_v.bias
+create_tensor: loading tensor blk.21.attn_output.weight
+create_tensor: loading tensor blk.21.ffn_norm.weight
+create_tensor: loading tensor blk.21.ffn_gate.weight
+create_tensor: loading tensor blk.21.ffn_down.weight
+create_tensor: loading tensor blk.21.ffn_up.weight
+create_tensor: loading tensor blk.22.attn_norm.weight
+create_tensor: loading tensor blk.22.attn_q.weight
+create_tensor: loading tensor blk.22.attn_k.weight
+create_tensor: loading tensor blk.22.attn_v.weight
+create_tensor: loading tensor blk.22.attn_q.bias
+create_tensor: loading tensor blk.22.attn_k.bias
+create_tensor: loading tensor blk.22.attn_v.bias
+create_tensor: loading tensor blk.22.attn_output.weight
+create_tensor: loading tensor blk.22.ffn_norm.weight
+create_tensor: loading tensor blk.22.ffn_gate.weight
+create_tensor: loading tensor blk.22.ffn_down.weight
+create_tensor: loading tensor blk.22.ffn_up.weight
+create_tensor: loading tensor blk.23.attn_norm.weight
+create_tensor: loading tensor blk.23.attn_q.weight
+create_tensor: loading tensor blk.23.attn_k.weight
+create_tensor: loading tensor blk.23.attn_v.weight
+create_tensor: loading tensor blk.23.attn_q.bias
+create_tensor: loading tensor blk.23.attn_k.bias
+create_tensor: loading tensor blk.23.attn_v.bias
+create_tensor: loading tensor blk.23.attn_output.weight
+create_tensor: loading tensor blk.23.ffn_norm.weight
+create_tensor: loading tensor blk.23.ffn_gate.weight
+create_tensor: loading tensor blk.23.ffn_down.weight
+create_tensor: loading tensor blk.23.ffn_up.weight
+done_getting_tensors: tensor 'token_embd.weight' (q5_0) (and 278 others) cannot be used with preferred buffer type CPU_REPACK, using CPU instead
+load_tensors:   CPU_Mapped model buffer size =   462.96 MiB
+load_tensors:   CPU_REPACK model buffer size =    28.05 MiB
+..............................................repack: repack tensor blk.2.ffn_down.weight with q4_K_8x8
+.repack: repack tensor blk.4.ffn_down.weight with q4_K_8x8
+repack: repack tensor blk.5.ffn_down.weight with q4_K_8x8
+.repack: repack tensor blk.11.ffn_down.weight with q4_K_8x8
+repack: repack tensor blk.12.ffn_down.weight with q4_K_8x8
+.repack: repack tensor blk.14.ffn_down.weight with q4_K_8x8
+repack: repack tensor blk.15.ffn_down.weight with q4_K_8x8
+.repack: repack tensor blk.17.ffn_down.weight with q4_K_8x8
+repack: repack tensor blk.18.ffn_down.weight with q4_K_8x8
+.repack: repack tensor blk.20.ffn_down.weight with q4_K_8x8
+repack: repack tensor blk.22.ffn_down.weight with q4_K_8x8
+.repack: repack tensor blk.23.ffn_down.weight with q4_K_8x8
+.
+llama_context: constructing llama_context
+llama_context: n_seq_max     = 1
+llama_context: n_ctx         = 4096
+llama_context: n_ctx_seq     = 4096
+llama_context: n_batch       = 512
+llama_context: n_ubatch      = 512
+llama_context: causal_attn   = 1
+llama_context: flash_attn    = disabled
+llama_context: kv_unified    = false
+llama_context: freq_base     = 1000000.0
+llama_context: freq_scale    = 1
+llama_context: n_rs_seq      = 0
+llama_context: n_outputs_max = 512
+llama_context: n_ctx_seq (4096) < n_ctx_train (32768) -- the full capacity of the model will not be utilized
+set_abort_callback: call
+llama_context:        CPU  output buffer size =     0.58 MiB
+llama_kv_cache: layer   0: dev = CPU
+llama_kv_cache: layer   1: dev = CPU
+llama_kv_cache: layer   2: dev = CPU
+llama_kv_cache: layer   3: dev = CPU
+llama_kv_cache: layer   4: dev = CPU
+llama_kv_cache: layer   5: dev = CPU
+llama_kv_cache: layer   6: dev = CPU
+llama_kv_cache: layer   7: dev = CPU
+llama_kv_cache: layer   8: dev = CPU
+llama_kv_cache: layer   9: dev = CPU
+llama_kv_cache: layer  10: dev = CPU
+llama_kv_cache: layer  11: dev = CPU
+llama_kv_cache: layer  12: dev = CPU
+llama_kv_cache: layer  13: dev = CPU
+llama_kv_cache: layer  14: dev = CPU
+llama_kv_cache: layer  15: dev = CPU
+llama_kv_cache: layer  16: dev = CPU
+llama_kv_cache: layer  17: dev = CPU
+llama_kv_cache: layer  18: dev = CPU
+llama_kv_cache: layer  19: dev = CPU
+llama_kv_cache: layer  20: dev = CPU
+llama_kv_cache: layer  21: dev = CPU
+llama_kv_cache: layer  22: dev = CPU
+llama_kv_cache: layer  23: dev = CPU
+llama_kv_cache:        CPU KV buffer size =    48.00 MiB
+llama_kv_cache: size =   48.00 MiB (  4096 cells,  24 layers,  1/1 seqs), K (f16):   24.00 MiB, V (f16):   24.00 MiB
+llama_kv_cache: attn_rot_k = 0, n_embd_head_k_all = 64
+llama_kv_cache: attn_rot_v = 0, n_embd_head_k_all = 64
+llama_context: enumerating backends
+llama_context: backend_ptrs.size() = 1
+sched_reserve: reserving ...
+sched_reserve: max_nodes = 2328
+sched_reserve: reserving full memory module
+sched_reserve: worst-case: n_tokens = 512, n_seqs = 1, n_outputs = 1
+resolve_fused_ops: resolving fused Gated Delta Net support:
+graph_reserve: reserving a graph for ubatch with n_tokens =    1, n_seqs =  1, n_outputs =    1
+resolve_fused_ops: fused Gated Delta Net (autoregressive) enabled
+graph_reserve: reserving a graph for ubatch with n_tokens =   16, n_seqs =  1, n_outputs =   16
+resolve_fused_ops: fused Gated Delta Net (chunked) enabled
+resolve_fused_ops: resolving fused Lightning Indexer support:
+graph_reserve: reserving a graph for ubatch with n_tokens =    1, n_seqs =  1, n_outputs =    1
+resolve_fused_ops: Lightning Indexer enabled
+graph_reserve: reserving a graph for ubatch with n_tokens =  512, n_seqs =  1, n_outputs =  512
+graph_reserve: reserving a graph for ubatch with n_tokens =    1, n_seqs =  1, n_outputs =    1
+graph_reserve: reserving a graph for ubatch with n_tokens =  512, n_seqs =  1, n_outputs =  512
+sched_reserve:        CPU compute buffer size =   302.00 MiB
+sched_reserve: graph nodes  = 942
+sched_reserve: graph splits = 1
+sched_reserve: reserve took 17.24 ms, sched copies = 1
+CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+Model metadata: {'general.name': 'qwen2.5-0.5b-instruct', 'general.architecture': 'qwen2', 'general.type': 'model', 'general.finetune': 'qwen2.5-0.5b-instruct', 'general.version': 'v0.1', 'qwen2.block_count': '24', 'general.size_label': '630M', 'qwen2.context_length': '32768', 'qwen2.embedding_length': '896', 'general.quantization_version': '2', 'tokenizer.ggml.bos_token_id': '151643', 'qwen2.feed_forward_length': '4864', 'qwen2.attention.head_count': '14', 'qwen2.attention.head_count_kv': '2', 'tokenizer.ggml.padding_token_id': '151643', 'qwen2.rope.freq_base': '1000000.000000', 'qwen2.attention.layer_norm_rms_epsilon': '0.000001', 'tokenizer.ggml.eos_token_id': '151645', 'general.file_type': '15', 'tokenizer.ggml.model': 'gpt2', 'tokenizer.ggml.pre': 'qwen2', 'tokenizer.ggml.add_bos_token': 'false', 'tokenizer.chat_template': '{%- if tools %}\n    {{- \'<|im_start|>system\\n\' }}\n    {%- if messages[0][\'role\'] == \'system\' %}\n        {{- messages[0][\'content\'] }}\n    {%- else %}\n        {{- \'You are Qwen, created by Alibaba Cloud. You are a helpful assistant.\' }}\n    {%- endif %}\n    {{- "\\n\\n# Tools\\n\\nYou may call one or more functions to assist with the user query.\\n\\nYou are provided with function signatures within <tools></tools> XML tags:\\n<tools>" }}\n    {%- for tool in tools %}\n        {{- "\\n" }}\n        {{- tool | tojson }}\n    {%- endfor %}\n    {{- "\\n</tools>\\n\\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\\n<tool_call>\\n{{\\"name\\": <function-name>, \\"arguments\\": <args-json-object>}}\\n</tool_call><|im_end|>\\n" }}\n{%- else %}\n    {%- if messages[0][\'role\'] == \'system\' %}\n        {{- \'<|im_start|>system\\n\' + messages[0][\'content\'] + \'<|im_end|>\\n\' }}\n    {%- else %}\n        {{- \'<|im_start|>system\\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\\n\' }}\n    {%- endif %}\n{%- endif %}\n{%- for message in messages %}\n    {%- if (message.role == "user") or (message.role == "system" and not loop.first) or (message.role == "assistant" and not message.tool_calls) %}\n        {{- \'<|im_start|>\' + message.role + \'\\n\' + message.content + \'<|im_end|>\' + \'\\n\' }}\n    {%- elif message.role == "assistant" %}\n        {{- \'<|im_start|>\' + message.role }}\n        {%- if message.content %}\n            {{- \'\\n\' + message.content }}\n        {%- endif %}\n        {%- for tool_call in message.tool_calls %}\n            {%- if tool_call.function is defined %}\n                {%- set tool_call = tool_call.function %}\n            {%- endif %}\n            {{- \'\\n<tool_call>\\n{"name": "\' }}\n            {{- tool_call.name }}\n            {{- \'", "arguments": \' }}\n            {{- tool_call.arguments | tojson }}\n            {{- \'}\\n</tool_call>\' }}\n        {%- endfor %}\n        {{- \'<|im_end|>\\n\' }}\n    {%- elif message.role == "tool" %}\n        {%- if (loop.index0 == 0) or (messages[loop.index0 - 1].role != "tool") %}\n            {{- \'<|im_start|>user\' }}\n        {%- endif %}\n        {{- \'\\n<tool_response>\\n\' }}\n        {{- message.content }}\n        {{- \'\\n</tool_response>\' }}\n        {%- if loop.last or (messages[loop.index0 + 1].role != "tool") %}\n            {{- \'<|im_end|>\\n\' }}\n        {%- endif %}\n    {%- endif %}\n{%- endfor %}\n{%- if add_generation_prompt %}\n    {{- \'<|im_start|>assistant\\n\' }}\n{%- endif %}\n'}
+Available chat formats from metadata: chat_template.default
+Using gguf chat template: {%- if tools %}
+    {{- '<|im_start|>system\n' }}
+    {%- if messages[0]['role'] == 'system' %}
+        {{- messages[0]['content'] }}
+    {%- else %}
+        {{- 'You are Qwen, created by Alibaba Cloud. You are a helpful assistant.' }}
+    {%- endif %}
+    {{- "\n\n# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n<tools>" }}
+    {%- for tool in tools %}
+        {{- "\n" }}
+        {{- tool | tojson }}
+    {%- endfor %}
+    {{- "\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{{\"name\": <function-name>, \"arguments\": <args-json-object>}}\n</tool_call><|im_end|>\n" }}
+{%- else %}
+    {%- if messages[0]['role'] == 'system' %}
+        {{- '<|im_start|>system\n' + messages[0]['content'] + '<|im_end|>\n' }}
+    {%- else %}
+        {{- '<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n' }}
+    {%- endif %}
+{%- endif %}
+{%- for message in messages %}
+    {%- if (message.role == "user") or (message.role == "system" and not loop.first) or (message.role == "assistant" and not message.tool_calls) %}
+        {{- '<|im_start|>' + message.role + '\n' + message.content + '<|im_end|>' + '\n' }}
+    {%- elif message.role == "assistant" %}
+        {{- '<|im_start|>' + message.role }}
+        {%- if message.content %}
+            {{- '\n' + message.content }}
+        {%- endif %}
+        {%- for tool_call in message.tool_calls %}
+            {%- if tool_call.function is defined %}
+                {%- set tool_call = tool_call.function %}
+            {%- endif %}
+            {{- '\n<tool_call>\n{"name": "' }}
+            {{- tool_call.name }}
+            {{- '", "arguments": ' }}
+            {{- tool_call.arguments | tojson }}
+            {{- '}\n</tool_call>' }}
+        {%- endfor %}
+        {{- '<|im_end|>\n' }}
+    {%- elif message.role == "tool" %}
+        {%- if (loop.index0 == 0) or (messages[loop.index0 - 1].role != "tool") %}
+            {{- '<|im_start|>user' }}
+        {%- endif %}
+        {{- '\n<tool_response>\n' }}
+        {{- message.content }}
+        {{- '\n</tool_response>' }}
+        {%- if loop.last or (messages[loop.index0 + 1].role != "tool") %}
+            {{- '<|im_end|>\n' }}
+        {%- endif %}
+    {%- endif %}
+{%- endfor %}
+{%- if add_generation_prompt %}
+    {{- '<|im_start|>assistant\n' }}
+{%- endif %}
+
+Using chat eos_token: <|im_end|>
+Using chat bos_token: <|endoftext|>
+RAM after loading model: 197.50 MB
+
+Prompt: Explain recursion in simple terms.
+llama_perf_context_print:        load time =    1362.63 ms
+llama_perf_context_print: prompt eval time =    1361.98 ms /    36 tokens (   37.83 ms per token,    26.43 tokens per second)
+llama_perf_context_print:        eval time =    4819.76 ms /   125 runs   (   38.56 ms per token,    25.93 tokens per second)
+llama_perf_context_print:       total time =    6296.86 ms /   161 tokens
+llama_perf_context_print:    graphs reused =        124
+
+Answer:
+
+Recursion is a programming technique where a function calls itself repeatedly until a certain condition is met. This technique is often used to solve problems that can be broken down into smaller, similar problems. The process of recursion involves a function calling itself with a smaller input, until a base case is reached, at which point the function stops calling itself. The base case is a condition that stops the recursion, and the function returns a result when the condition is met. Recursion can be used to solve problems such as finding the factorial of a number, finding the sum of the first n natural numbers, or finding the nth Fibonacci number.
+
+------ Statistics ------
+RAM Usage      : 550.08 MB
+Output Tokens  : 125
+Time           : 6.30 sec
+Tokens / sec   : 19.85
+
+Prompt: Write a Python function to compute factorial.
+Llama.generate: 24 prefix-match hit, remaining 13 prompt tokens to eval
+llama_perf_context_print:        load time =    1362.63 ms
+llama_perf_context_print: prompt eval time =     180.61 ms /    13 tokens (   13.89 ms per token,    71.98 tokens per second)
+llama_perf_context_print:        eval time =   17553.33 ms /   455 runs   (   38.58 ms per token,    25.92 tokens per second)
+llama_perf_context_print:       total time =   18347.33 ms /   468 tokens
+llama_perf_context_print:    graphs reused =        453
+
+Answer:
+
+Certainly! Computing the factorial of a number is a fundamental mathematical operation that is often used in various applications, including combinatorics, number theory, and algorithm design. Here's a Python function to compute the factorial of a given number:
+
+```python
+def factorial(n):
+    """
+    Compute the factorial of a given number n.
+
+    Parameters:
+    n (int): The number to compute the factorial of.
+
+    Returns:
+    int: The factorial of n.
+    """
+    if n < 0:
+        raise ValueError("Factorial is not defined for negative numbers.")
+    elif n == 0:
+        return 1
+    else:
+        result = 1
+        for i in range(1, n + 1):
+            result *= i
+        return result
+
+# Example usage:
+print(factorial(5))  # Output: 120
+print(factorial(0))  # Output: 1
+print(factorial(-1)) # Raises ValueError: Factorial is not defined for negative numbers
+```
+
+### Explanation:
+1. **Function Definition**: The function `factorial` takes an integer `n` as input.
+2. **Input Validation**: The function checks if the input `n` is less than 0. If it is, it raises a `ValueError` because the factorial is not defined for negative numbers.
+3. **Base Case**: If `n` is 0, the function returns 1 because the factorial of 0 is 1.
+4. **Recursive Case**: For all other values of `n`, the function initializes `result` to 1 and then iterates from 1 to `n`, multiplying `result` by each integer from 1 to `n`.
+
+### Example Usage:
+- `factorial(5)` computes `5!` (5 factorial), which is `120`.
+- `factorial(0)` returns `1` because the factorial of 0 is 1.
+- `factorial(-1)` raises a `ValueError` because the factorial is not defined for negative numbers.
+
+This function can be used in various applications where factorial calculations are required, such as in combinatorial problems, in algorithms, or in mathematical calculations.
+
+------ Statistics ------
+RAM Usage      : 552.41 MB
+Output Tokens  : 455
+Time           : 18.35 sec
+Tokens / sec   : 24.80
+
+Prompt: Summarize machine learning in 100 words.
+Llama.generate: 24 prefix-match hit, remaining 17 prompt tokens to eval
+llama_perf_context_print:        load time =    1362.63 ms
+llama_perf_context_print: prompt eval time =     216.25 ms /    17 tokens (   12.72 ms per token,    78.61 tokens per second)
+llama_perf_context_print:        eval time =    5540.85 ms /   118 runs   (   46.96 ms per token,    21.30 tokens per second)
+llama_perf_context_print:       total time =    5876.44 ms /   135 tokens
+llama_perf_context_print:    graphs reused =        117
+
+Answer:
+
+Machine learning is a subset of artificial intelligence that involves the development of algorithms and statistical models that enable computers to learn from and make predictions based on data. It is a powerful tool for solving complex problems and making predictions in various fields such as healthcare, finance, and engineering. Machine learning algorithms can be trained on large datasets to identify patterns and make predictions based on that data. This allows machines to learn from their environment and improve their performance over time. Machine learning is a key component of artificial intelligence, and it is used to develop intelligent systems that can make decisions and take actions based on data.
+
+------ Statistics ------
+RAM Usage      : 554.32 MB
+Output Tokens  : 118
+Time           : 5.88 sec
+Tokens / sec   : 20.08
+
+Prompt: Translate "Good morning, how are you?" into French.
+Llama.generate: 24 prefix-match hit, remaining 17 prompt tokens to eval
+llama_perf_context_print:        load time =    1362.63 ms
+llama_perf_context_print: prompt eval time =     222.16 ms /    17 tokens (   13.07 ms per token,    76.52 tokens per second)
+llama_perf_context_print:        eval time =     703.79 ms /    19 runs   (   37.04 ms per token,    27.00 tokens per second)
+llama_perf_context_print:       total time =     941.37 ms /    36 tokens
+llama_perf_context_print:    graphs reused =         18
+
+Answer:
+
+"Good morning, how are you?" in French is "Bonjour, comment ça va ?"
+
+------ Statistics ------
+RAM Usage      : 556.11 MB
+Output Tokens  : 19
+Time           : 0.94 sec
+Tokens / sec   : 20.14
+
+Prompt: Write a professional email requesting annual leave.
+Llama.generate: 24 prefix-match hit, remaining 13 prompt tokens to eval
+llama_perf_context_print:        load time =    1362.63 ms
+llama_perf_context_print: prompt eval time =     192.79 ms /    13 tokens (   14.83 ms per token,    67.43 tokens per second)
+llama_perf_context_print:        eval time =  199486.82 ms /  4058 runs   (   49.16 ms per token,    20.34 tokens per second)
+llama_perf_context_print:       total time =  229472.27 ms /  4071 tokens
+llama_perf_context_print:    graphs reused =       4042
+
+Answer:
+
+Subject: Request for Annual Leave
+
+Dear [Manager's Name],
+
+I hope this email finds you well. I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request annual leave for the year 2023. I am currently employed at [Company Name] and have been working for [number of years] years.
+
+I am writing to request
+
+------ Statistics ------
+RAM Usage      : 561.09 MB
+Output Tokens  : 4059
+Time           : 229.47 sec
+Tokens / sec   : 17.69
