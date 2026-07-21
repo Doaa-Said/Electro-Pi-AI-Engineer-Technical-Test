@@ -1,4 +1,52 @@
-# Section 1 – LiveKit Voice Agent with Tool Calling
+# Electro Pi AI Engineer Technical Assessment
+
+## Overview
+
+This repository contains my solutions for the Electro Pi AI Engineer Technical Assessment. The project is divided into four independent sections, each addressing a different AI engineering task, from building voice-enabled AI agents to deploying Large Language Models as production-ready inference services.
+
+The repository demonstrates practical experience with:
+
+- Voice AI agents
+- Tool calling
+- Retrieval-Augmented Generation (RAG)
+- Large Language Models
+- Model quantization
+- ONNX Runtime inference
+- FastAPI REST APIs
+- Docker containerization
+- Streaming inference
+- Performance evaluation
+- Production deployment considerations
+
+---
+
+## Repository Structure
+
+```text
+Electro-Pi-AI-Engineer-Technical-Test/
+│
+├── section1/
+├── section2/
+├── section3/
+├── section4/
+└── README.md
+```
+
+---
+
+## Prerequisites
+
+Before running the projects, ensure the following are installed:
+
+- Python 3.12 or later
+- Git
+- Docker Desktop (required for Section 4)
+
+Each section contains its own setup instructions, including virtual environment creation, dependency installation, and execution steps.
+
+---
+
+# Section 1 – LiveKit Voice Agent with Tool Calling# Section 1 – LiveKit Voice Agent with Tool Calling
 
 ---
 
