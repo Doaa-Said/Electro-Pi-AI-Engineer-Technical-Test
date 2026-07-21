@@ -1,0 +1,9 @@
+Explain recursion in simple terms.
+
+Write a Python function to compute factorial.
+
+Summarize machine learning in 100 words.
+
+Translate "Good morning, how are you?" into French.
+
+Write a professional email requesting annual leave.
