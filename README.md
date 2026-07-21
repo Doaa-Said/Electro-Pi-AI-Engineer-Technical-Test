@@ -1143,11 +1143,16 @@ python download_model.py
 
 This downloads the Hugging Face model into the `models/fp` directory.
 
-Download the GGUF version separately and place it inside:
+Download the GGUF version from:
+
+[https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF/blob/main/qwen2.5-0.5b-instruct-q4_k_m.gguf)
+
+Place it inside:
 
 ```text
 models/
 └── gguf/
+    └── qwen2.5-0.5b-instruct-q4_k_m.gguf
 ```
 
 ---
