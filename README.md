@@ -46,7 +46,7 @@ Each section contains its own setup instructions, including virtual environment 
 
 ---
 
-# Section 1 – LiveKit Voice Agent with Tool Calling# Section 1 – LiveKit Voice Agent with Tool Calling
+# Section 1 – LiveKit Voice Agent with Tool Calling
 
 ---
 
